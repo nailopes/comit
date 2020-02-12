@@ -1,8 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+<body>
+   <h1>Create User</h1> 
+  <hr/>
+   <form action="create-user.html" method="GET">
+     <div>
+         <label for="email">E-mail:</label>
+         <input type="email" name="email" id="email" placeholder="email" required/>
+     </div>  
+     <div>
+         <label for="username">Username:</label>
+         <input type="text" name="username" id="username" placeholder="username" size="30" maxlength="12" />
+     </div>
+     <div>
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="password" placeholder="password" size="30" maxlength="8" required />
+     </div>
+     <div>
+         <label for="bio">Bio:</label></br>
+         <textarea name="body" placeholder="give a brief description of this user">Message:</textarea>
+     </div>
 
-<form action="send-email.php" method="post">
-    <input type="email" name="email" />
-    Name<input type="text" placeholder="subject" />
-    <textarea name="body"></textarea>
-    <input type="submit" value="Send!" />
-  </form>
+     <fieldset>
+         <legend>Interests</legend>
+         <div>
+             <label for="superhero">Select your favourite superhero</label>
+             <input type="radio" name="superhero" value="superman"/>Superman
+             <input type="radio" name="superhero" value="batman"/>Batman 
+             <input type="radio" name="superhero" value="wonderwoman" checked/>Wonder Woman 
+             <input type="radio" name="superhero" value="flash"/>Flash 
+             <input type="radio" name="superhero" value="Thor"/>Thor
+             <input type="radio" name="superhero" value="Hulk"/>Hulk
+          </div>
+          <div>
+              <label for="videogames">Select your favourite video game</label>
+              <input type="radio" name="videogames" value="fifa" checked/>Fifa
+              <input type="radio" name="videogames" value="nhl"/>NHL
+              <input type="radio" name="videogames" value="residentevil"/>Resident Evil
+              <input type="radio" name="videogames" value="uncharted" checked/>Uncharted 
+          </div>
+     </fieldset>
+      <input type="hidden" name="userid" value="2300"/>
+      <input type="submit" value="Creat user"/>
+   </form>  
+</body>
+</html>
