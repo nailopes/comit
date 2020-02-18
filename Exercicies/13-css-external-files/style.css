@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+nav a {
+    color: red;
+}
+
+p {
+    font: 18px;
+}
+
+.page-nav {
+    color: #00aced;
+}
