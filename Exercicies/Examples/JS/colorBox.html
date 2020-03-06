@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Box</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: black solid 2px;
+            margin-bottom: 40px;
+
+        }
+
+    </style>
+</head>
+<body>
+   <div id="box" class="box"></div>
+
+   Color: <input id="colorSelector" type="color">
+    <button id="setButton">Set</button>
+  
+
+
+    <script>
+        //Get reference to UI elements
+        let box = document.getElementById("box");
+        let colorSelector = document.getElementById("colorSelector");
+        let setButton = document.getElementById("setButton")
+
+        // Do function to set colors..
+        function setColor(){
+            console.log(colorSelector.value);
+            box.style.background = colorSelector.value
+        }
+
+        //Click event
+        setButton.addEventListener("click", setColor)
+
+    </script>
+</body>
+</html>
